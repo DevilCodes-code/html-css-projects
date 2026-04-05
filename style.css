@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.container{
+    height: 100vh;
+    background: linear-gradient(to right,#eb6ac0,#f4d54d);
+    overflow: hidden;
+    display: flex;  /*display=flex is used for to move my div to center,right.. side of the viewport heigh*/
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-form{
+    background-color: #f8efefca;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.1);
+    transform: translateY(100%);
+    transition: transform 0.9s ease-in-out;
+}
+.container.active .contact-form{
+    transform: translateY(0);
+}
+.contact-form h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+label{
+     display: block;
+     margin-bottom: 8px;
+}
+input,textarea{
+    padding: 10px; 
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-elements{
+    margin-bottom:20px;
+}
+button{
+    background-color: #568feb;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 15px;
+    border: none;
+     cursor: pointer;
+}
+button:hover{
+    background-color: rgb(228, 68, 183);
+    transition-duration: 2000ms;
+   
+}
